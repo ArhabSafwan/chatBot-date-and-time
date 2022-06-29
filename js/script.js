@@ -18,8 +18,14 @@ btn.addEventListener('click', function () {
         let today = new Date();
         let hours = today.getHours();
         let minutes = today.getMinutes();
+        let date = today.getDate();
+        const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+        let nmonth = month[today.getMonth()];
+        let fullyear = today.getFullYear();
 
-        let current_date = `${hours}:${minutes}`;
+
+
+        let current_date = `${date}th ${nmonth}, ${fullyear} ${hours}:${minutes}`;
         dispdate1.innerHTML=current_date;
         dispdate2.innerHTML=current_date;
         
