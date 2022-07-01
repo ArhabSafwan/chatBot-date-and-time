@@ -26,7 +26,7 @@ btn.addEventListener('click', function () {
         let nmonth = month[today.getMonth()];
         let fullyear = today.getFullYear();
 
-        let current_date = `${date}th ${nmonth}, ${fullyear} ${hours}:${minutes} ${ampm}`;
+        let current_date = `${hours}:${minutes} ${ampm}, ${date}th ${nmonth}, ${fullyear}`;
         dispdate1.innerHTML=current_date;
         dispdate2.innerHTML=current_date;
         
