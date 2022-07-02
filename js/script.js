@@ -1,10 +1,11 @@
 let btn = document.getElementById('btn');
+const box = document.querySelector('.box');
 let display1 = document.getElementById('display1');
 let display2 = document.getElementById('display2');
 let dispdate1 = document.getElementById('datedisp1');
 let dispdate2 = document.getElementById('datedisp2');
 
-var chat = ['hello', 'Zuhan ekta horny pola', 'tawssef vhai is best', 'tonmoy vhai zulumkari', 'sharif vhai osthir', 'tareq vhai extra terrstrial', 'foysal vhai boy'];
+var chat = ['hello', 'how are you doing', 'what is your name', 'from where you are', 'do you love coffee', 'great', 'it is good to know you'];
 
 btn.addEventListener('click', function () {
     var randomchat = chat[Math.floor(Math.random() * chat.length)]
@@ -31,7 +32,20 @@ btn.addEventListener('click', function () {
         dispdate2.innerHTML=current_date;
         
     }
+
+    function renderMessege(txt,type){
+        let idName = 'display2';
+        if (type!=='user') {
+            idName = 'display1'
+        }
+        // const messegeDiv = document.createElement('div');
+        const txtNode = document.createTextNode(txt);
+        messegeDiv.classList.add(idName);
+        messegeDiv.append(txtNode);
+        box.append(messegeDiv);
+    }
     date();
+    renderMessege();
     
 
 

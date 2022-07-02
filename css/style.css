@@ -49,3 +49,22 @@ body {
     background: rgb(255, 253, 253);
     
 }
+
+
+#display2
+{
+    padding: 8px;
+    background: rgb(121, 116, 116);
+  
+    width: max-content;
+    border-radius: 10px 3px 10px 10px;
+}
+
+#display1{
+    background: #0652c0;
+    color: var(--light-color);
+    padding: 8px;
+    margin: 5px;
+    width: max-content;
+    border-radius: 10px 10px 3px 10px;
+}
