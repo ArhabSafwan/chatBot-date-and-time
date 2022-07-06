@@ -34,15 +34,14 @@ btn.addEventListener('click', function () {
     }
 
     function renderMessege(txt,type){
-        let idName = 'display2';
-        if (type!=='user') {
-            idName = 'display1'
-        }
-        // const messegeDiv = document.createElement('div');
-        const txtNode = document.createTextNode(txt);
-        messegeDiv.classList.add(idName);
-        messegeDiv.append(txtNode);
-        box.append(messegeDiv);
+        let idName = 'mainDiv';
+       
+        const messegeDiv = document.createElement('div');
+        document.getElementById('mainDiv')[0].set 
+        // const txtNode = document.createTextNode(txt);
+        // messegeDiv.classList.add(idName);
+        // messegeDiv.append(txtNode);
+        // box.append(messegeDiv);
     }
     date();
     renderMessege();
