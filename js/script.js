@@ -35,9 +35,13 @@ btn.addEventListener('click', function () {
 
     function renderMessege(txt,type){
         let idName = 'mainDiv';
-       
+       const nodelist = document.querySelectorAll('.mainClass').lastChild;
         const messegeDiv = document.createElement('div');
-        document.getElementById('mainDiv')[0].set 
+        messegeDiv.innerHTML = '<div id="mainDiv"class="mainClass"><div><p id="display1">display</p><p style="font-size:12px ;" id="datedisp1">date</p></div> <div style="text-align: right ;"><p id="display2"> bingo</p><br><br><p style="font-size:12px ;" id="datedisp2">date</p></div></div> ';
+    //   console.log(nodelist);
+      
+        nodelist.appendChild(messegeDiv);
+        // document.body.appendChild(messegeDiv);
         // const txtNode = document.createTextNode(txt);
         // messegeDiv.classList.add(idName);
         // messegeDiv.append(txtNode);
