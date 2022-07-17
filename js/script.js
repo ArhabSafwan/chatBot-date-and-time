@@ -10,10 +10,10 @@ var chat = ['hello', 'how are you doing', 'what is your name', 'from where you a
 btn.addEventListener('click', function () 
 {
     var randomchat = chat[Math.floor(Math.random() * chat.length)]
-    display1.innerHTML = randomchat;
+    // display1.innerHTML = randomchat;
 
     let display = document.getElementById('userbox').value;
-    document.getElementById('display2').innerHTML = display;
+    // document.getElementById('display2').innerHTML = display;
     document.getElementById('userbox').value = '';
 
     function date() {
@@ -29,8 +29,9 @@ btn.addEventListener('click', function ()
         let fullyear = today.getFullYear();
 
         let current_date = `${hours}:${minutes} ${ampm}, ${date}th ${nmonth}, ${fullyear}`;
-        dispdate1.innerHTML=current_date;
-        dispdate2.innerHTML=current_date;
+        // dispdate1.innerHTML=current_date;
+        // dispdate2.innerHTML=current_date;
+        return current_date;
         
     }
 
@@ -56,7 +57,8 @@ btn.addEventListener('click', function ()
         // messegeDiv.append(txtNode);
         // box.append(messegeDiv);
     }
-    date();
+    // date();
+    // console.log(date());
     renderMessege();
     
 
