@@ -36,27 +36,28 @@ btn.addEventListener('click', function ()
     }
 
     function renderMessege(txt,type){
-        let idName = 'mainDiv';
+        // let idName = 'mainDiv';
        const nodelist = document.querySelectorAll('.mainClass');
         const messegeDiv = document.createElement('div');
-        messegeDiv.innerHTML = '<div id="mainDiv"class="mainClass"><div><p id="display1">'+randomchat+'</p><p style="font-size:12px ;" id="datedisp1">'+date()+'</p></div> <div style="text-align: right ;"><p id="display2">'+display+'</p><br><br><p style="font-size:12px ;" id="datedisp2">'+date()+'</p></div></div> ';
+        messegeDiv.innerHTML = '<div id="mainDiv"class="mainClass"><div><p id="display1">'+randomchat+'</p><p style="font-size:12px ;" id="datedisp1">'+date()+'</p></div> <div style="text-align: right ;"><p id="display2">'+display+'</p><br><p style="font-size:12px ;" id="datedisp2">'+date()+'</p></div></div> ';
     //   console.log(nodelist);
-    var j=0;
+    // var j=0;
 
-    for (let i = 0; i < nodelist.length; i++) {
-        j++;
+    // for (let i = 0; i < nodelist.length; i++) {
+    //     j++;
         
-    }
+    // }
+  
     
     
       
-        nodelist[j-1].appendChild(messegeDiv);
+        nodelist[ nodelist.length-1].appendChild(messegeDiv);
         // document.body.appendChild(messegeDiv);
         // const txtNode = document.createTextNode(txt);
         // messegeDiv.classList.add(idName);
         // messegeDiv.append(txtNode);
         // box.append(messegeDiv);
-    }``
+    }
     // date();
     // console.log(date());
     renderMessege();

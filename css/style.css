@@ -65,6 +65,7 @@ body {
     position: relative;
     float: right;
     text-align: right;
+    color: white;
     
     padding: 8px;
     background: rgb(121, 116, 116);
@@ -75,7 +76,7 @@ body {
 
 #display1{
     background: #0652c0;
-    color: var(--light-color);
+    color: white;
     padding: 8px;
     margin: 5px;
     width: max-content;
